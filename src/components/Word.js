@@ -9,7 +9,18 @@ export default function Word({ word }) {
   }
 
   function toggleDone() {
-    setIsDone(!isDone);
+    // setIsDone(!isDone);
+    // fecth()
+    // 1. 2번째 인자로 객체를 넣어줌
+    //  1-1. 객체에는 요청의 옵션을 입력
+    fetch(`http://localhost:3001/words/${word.id}`, {
+      method: "PUT",
+      headers: {
+        // Content-Type : 보내는 리소스의 타입
+        "Content-Type": "application/json",
+      },
+      body,
+    });
   }
 
   return (
