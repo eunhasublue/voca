@@ -22,7 +22,8 @@ export default function Day() {
 
   return (
     <>
-      <h2>Day {day}</h2>
+      <h2>DAY {day}</h2>
+      {words.length === 0 && <span>Loading...</span>}
       <table>
         <tbody>
           {words.map((word) => (

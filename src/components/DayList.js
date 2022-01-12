@@ -3,6 +3,10 @@ import useFetch from "../hooks/useFetch";
 
 export default function DayList() {
   const days = useFetch("http://localhost:3001/days");
+
+  if (days.length === 0) {
+    return <span>Loading...</span>;
+  }
   // 처음에는 빈배열로 만들고 API list를 가져와서 바꿔주는 방식으로 하기
   // 데이터가 바뀌면 자동으로 젠더링
   // const [days, setDays] = useState([]);
