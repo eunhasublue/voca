@@ -23,7 +23,7 @@
       "day": 1,
       "eng": "book",
       "kor": "책",
-      "isDone": true
+      "isDone": false
     },
     {
       "id": 3,
@@ -61,13 +61,6 @@
       "id": 8
     },
     {
-      "day": "2",
-      "eng": "mouse",
-      "kor": "쥐",
-      "isDone": false,
-      "id": 9
-    },
-    {
       "day": "4",
       "eng": "monkey",
       "kor": "원숭이",
@@ -80,13 +73,6 @@
       "kor": "사과",
       "isDone": false,
       "id": 11
-    },
-    {
-      "day": "3",
-      "eng": "apple",
-      "kor": "사과",
-      "isDone": false,
-      "id": 12
     }
   ]
 }
